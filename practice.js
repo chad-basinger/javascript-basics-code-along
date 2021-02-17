@@ -5,7 +5,8 @@
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
 // Code here
-
+var greeting = "Hi";
+var farewell = 'Goodbye';
 
 
 //////////////////PROBLEM 2////////////////////
@@ -15,7 +16,9 @@
 // Concatenate hello and userName together and store the result in a variable called salutation
 
 //Code here
-
+var hello = "Hello";
+var userName = "Chad Basinger";
+var salutation = hello + " " + userName;
 
 
 //////////////////PROBLEM 3////////////////////
@@ -23,7 +26,7 @@
 //Create a variable called seven that has a number data type with the value of 7
 
 //Code here
-
+var seven = 7;
 
 
 //////////////////PROBLEM 4////////////////////
@@ -32,7 +35,7 @@
 // This datatype should be a number
 
 //Code here
-
+var money = 1500000;
 
 
 //////////////////PROBLEM 5////////////////////
@@ -40,7 +43,7 @@
 // Make a variable called awesome and give it a value of the boolean data type true
 
 //Code here
-
+var awesome = true;
 
 
 //////////////////PROBLEM 6////////////////////
@@ -54,7 +57,7 @@ let myCar = "Jeep";
 
 
 //Code here
-
+myCar = null;
 
 
 //////////////////PROBLEM 7////////////////////
@@ -63,7 +66,7 @@ let myCar = "Jeep";
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
 //Code here
-
+var users = [{name:"Batman", age:59}, {name:"Robin", age:24}, {name:"Poison Ivy", age:35}, {name:"Mr. Freeze", age: 50}];
 
 
 //////////////////PROBLEM 8////////////////////
@@ -74,7 +77,7 @@ let myCar = "Jeep";
 // Each hobbies property will have a corresponding value which will be an object
 
 //Code here
-
+var family = {name:}
 
 
 //////////////////PROBLEM 9////////////////////
