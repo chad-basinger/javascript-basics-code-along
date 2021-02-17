@@ -77,7 +77,20 @@ var users = [{name:"Batman", age:59}, {name:"Robin", age:24}, {name:"Poison Ivy"
 // Each hobbies property will have a corresponding value which will be an object
 
 //Code here
-var family = {name:}
+var family = {
+  batman: {
+    hobbies: ['running', 'jumping', 'love making']
+    // faveDessert: 'fudge'
+  },
+  robin: {
+    hobbies: ['running', 'jumping', 'falling'] 
+    // faveDessert: 'fudge'
+  },
+  freeze: {
+    hobbies: ['running', 'jumping', 'being cold']
+    // faveDessert: 'fudge',
+  }
+};
 
 
 //////////////////PROBLEM 9////////////////////
@@ -86,7 +99,7 @@ var family = {name:}
 // Each item should be an array with 2 items (numbers) in each array
 
 //Code here
-
+var gameScores = [[2,4],[4,6],[6,8]]
 
 
 //////////////////PROBLEM 10////////////////////
