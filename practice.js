@@ -17,7 +17,7 @@ var farewell = 'Goodbye';
 
 //Code here
 var hello = "Hello";
-var userName = "Chad Basinger";
+var userName = "Chad";
 var salutation = hello + " " + userName;
 
 
@@ -108,16 +108,34 @@ var gameScores = [[2,4],[4,6],[6,8]]
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
 //Code here
-
-
-
+var people =[
+  {
+    name: 'Jack',
+    gender: 'male',
+    height: 55
+  },
+  {
+    name: 'Sylvia',
+    gender: 'female',
+    height: 60
+  },
+  {
+    name: 'Zeus',
+    gender: 'male',
+    height: 90
+  }
+]
 //////////////////PROBLEM 11////////////////////
 
 // Create a variable called cowboy which should be an object
 // This object should have 3 properties: name (string), state (string), favoriteCountrySong (string)
 
 //Code here
-
+var cowboy = {
+  name: 'John',
+  state: 'CA',
+  favoriteCountrySong: 'Country'
+}
 
 
 //////////////////PROBLEM 12////////////////////
@@ -147,7 +165,20 @@ function launch() {
 
 
 //Code here
+var dataTypes = [];
+dataTypes[0] = 42;
+dataTypes[1] = 'meaning';
+dataTypes[2] = true;
+dataTypes[3] = [2,3,4,5,6];
+dataTypes[4] = spaceship;
+dataTypes[5] = launch;
 
+//Why does the following work?
+// dataTypes[4] = $spaceship;
+// dataTypes[5] = launch();
+
+console.log(dataTypes[5])
+// [42, 'meaning', true, [2,3,4,5,6], spaceship, launch]
 
 
 //////////////////PROBLEM 13////////////////////
@@ -155,8 +186,10 @@ function launch() {
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2 // Code here
 };
+
+sum(4,5)
   
 
   
@@ -165,12 +198,13 @@ function sum(num1, num2){
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
-
+var number1 = 5
+var number2 = 10
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return // Code here
+  return number1 * number2// Code here
 };
 
 
@@ -186,8 +220,10 @@ let food = 'pizza';
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
 function favFood(){
-  return // Code here
+  return `My favorite food is ${food}`// Code here
 };
+
+favFood()
 
 
 
@@ -203,7 +239,7 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name){
-  // Code here
+  theBoss = name // Code here
 };
 
 
@@ -222,8 +258,8 @@ let user = {
 // Using the user object provided,
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
-function getName(userObj){
-  return // Code here
+function getName(){
+  return console.log(user.name)
 };
 
 
@@ -245,17 +281,17 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays[2];// Code here
 }
-
-
 
 //////////////////PROBLEM 19////////////////////
 
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
 // Code here
-
+function fn(param) {
+  return param
+}
 
 
 //////////////////PROBLEM 20////////////////////
@@ -270,6 +306,9 @@ let lastName = "Jones";
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
 // Code here
+function createName() {
+  return firstName + " " + lastName
+}
 
 
 
@@ -278,7 +317,9 @@ let lastName = "Jones";
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
-
+function showMeSeven(){
+  return 7
+}
 
 
 //////////////////PROBLEM 22////////////////////
@@ -286,7 +327,9 @@ let lastName = "Jones";
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
 // Code here
-
+function multiplier(num1, num2){
+  return num1 * num2
+}
 
 
 //////////////////PROBLEM 23////////////////////
@@ -296,7 +339,9 @@ let lastName = "Jones";
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
-
+function sayHello(greeting, name){
+  return greeting + " " + name
+}
 
 
 //////////////////PROBLEM 24////////////////////
@@ -307,7 +352,13 @@ let lastName = "Jones";
   // the second property should be duration with the value of the second parameter
 
 // Code here
-
+function makeExercise(exerciseName, duration){
+  var myObject = {
+    exerciseName: exerciseName,
+    duration: duration
+  };
+  return myObject;
+}
 
 
 //////////////////PROBLEM 25////////////////////
@@ -322,7 +373,11 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+  if(age > 21) {
+    return 'old enough'
+  } else {
+    return 'not yet'
+  } // Code here
 };
 
 
@@ -339,7 +394,11 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  // Code here
+  if(workEthic === 'great'){
+    return 'success at DevMountain'
+  } else {
+    return 'failure at DevMountain'
+  }
 };
 
 
@@ -356,7 +415,11 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash(){
-  // Code here
+  if(cookieType === 'raisin'){
+    return 'throw in trash'
+  } else {
+    return 'eat'
+  }
 };
 
 
@@ -374,7 +437,11 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore(){
-  // Code here
+  if(myTeamScore > yourTeamScore){
+    return 'we are the champions'
+  } else {
+    return ':('
+  }
 };
 
 
@@ -395,7 +462,13 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation(){
-  // Code here
+  if(age >= 3 && age <= 7){
+    return 'tricycle'
+  } else if(age >= 8 && age <= 15){
+    return 'bicycle'
+  } else if(age > 15){
+    return 'car'
+  }
 };
 
 
@@ -416,7 +489,7 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  // Code here
+  
 };
 
 
