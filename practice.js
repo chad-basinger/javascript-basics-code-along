@@ -489,7 +489,11 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  
+  if(temp === 'hot' && cash == true){
+    return 'Get Ice Cream!'
+  } else {
+    return 'Save up for another day.'
+  }
 };
 
 
@@ -509,7 +513,10 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime(){
-  // Code here
+  if(chores != true || work != true){
+    return 'free time!';
+  } else {
+  }
 };
 
 
@@ -531,7 +538,11 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  // Code here
+  if(currentSpeed == 'fast' && brakes != true){
+    return crash = true
+  } else {
+
+  }
 };
 
 
@@ -553,7 +564,9 @@ user = {
 // Use the if and else keywords in your solution
 // The arguments passed into makePurchase will always be numbers and will be changed during testing
 
-// Code here
+function makePurchase(priceOfItem){
+  
+}
 
 
 
